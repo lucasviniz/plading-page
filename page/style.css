@@ -132,7 +132,7 @@ body{
     padding-top: 30px;
 }
 
-#bannerButton{
+.bannerButton #bannerButton{
     width: 150px;
     height: 40px;
     border-radius: 15px;
@@ -142,27 +142,23 @@ body{
     cursor: pointer;
 }
 
-#bannerButton:hover{
+.bannerButton #bannerButton:hover{
     background-color: rgba(89, 0, 255, 0.61); 
 }
 
 
 .services{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    padding: 5rem;
     margin-top: var(--banner-height);
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 800px;
     z-index: -1;
 }
 
 .companies{
     display: flex;
-    border: solid 1px black;
+    justify-content: center;
     gap: 100px;
     margin-bottom: 50px;
 }
@@ -187,7 +183,7 @@ body{
 .itensMenu{
     display: flex;
     justify-content: center;
-    width: 100%;
+    max-width: 300px;
 }
 
 .itemMenu{
@@ -195,6 +191,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    padding: 10px;
     width: 85px;
     height: 85px;
     box-shadow: 0 4px 10px #00000008,0 0 2px #0000000f,0 2px 6px #0000001f!important;
@@ -210,4 +207,64 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #181818;
+    width: 100%;
+}
+
+.footerInfos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+    color: #cacaca;
+}
+
+
+.footerInfos a{
+    text-decoration: none;
+    color: #cacaca;
+}
+
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 80px;
+}
+
+.footerAlign{
+    display: flex;
+    flex-direction: row;
+}
+
+.privacyFooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: solid 0.5px #ffffff;
+    background-color: #181818;
+    padding: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #181818;
+    padding-top: 50px;
+    padding-inline: 200px;
+    width: 100%;
 }
