@@ -18,6 +18,8 @@ body{
 }
 
 .menubar{
+    position: fixed;
+    z-index: 1;
     background-color: rgb(24, 24, 24);
     width: 100%;
     height: 60px;
@@ -51,7 +53,8 @@ body{
 }
 
 .menubar ul li a:hover{
-    color: rgb(0, 49, 122);
+    color: #5900ff;
+    border-bottom: solid 1px #5900ff;
 }
 
 .btnMenu{
@@ -92,7 +95,6 @@ body{
 
 .banner{
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
     background-color: rgb(27, 27, 27);
@@ -132,10 +134,9 @@ body{
     padding-top: 30px;
 }
 
-.bannerButton #bannerButton{
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
+#bannerButton{
+    padding: 10px;
+    border-radius: 10px;
     font-size: 15px;
     background-color: rgb(89, 0, 255);
     color: white;
@@ -150,7 +151,6 @@ body{
 .services{
     display: block;
     padding: 5rem;
-    margin-top: var(--banner-height);
     background-color: rgb(255, 255, 255);
     width: 100%;
     z-index: -1;
@@ -252,7 +252,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    border-top: solid 0.5px #ffffff;
+    border-top: solid 0.5px #ffffff4e;
     background-color: #181818;
     padding: 10px;
 }
@@ -267,4 +267,12 @@ body{
     padding-top: 50px;
     padding-inline: 200px;
     width: 100%;
+    color: #cacaca;
+}
+
+.privacyFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35rem;
 }
