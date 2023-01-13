@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 100vh;
+}
+
+.container.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-signup .container.signup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .container.singin {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 2px #5900ff,0px 1px 2px 2px #5900ff,0 2px 1px #5900ff!important;
+    border-radius: 10px;
+
+}
+
+.login h1{
+    font-size: 50px;
+}
+
+.input{
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field{
+    position: relative;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+}
+
+.input input{
+    text-decoration: none;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cacaca;
+    padding: 10px;
+}
+
+.input input:focus{
+    border-bottom-width: 2px;
+}
+
+
+.login button{
+    width: 100%;
+    height: 40px;
+    background: #5900ff;
+    box-shadow: 0px 1px 5px 0px #5900ff7e;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.login button:hover{
+    background: #6e21fe;
+}
+
+#remember{
+    width: 12px;
+    margin: 0px;
+    height: 12px;
+    padding-right: 10px;
+}
+
+.selectButton{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.selectInfo{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+#forgotPassword a{
+    text-decoration: none;
+    color: #5900ff;
+}
+
+.createAccount{
+    margin-top: 20px;
+}
+
+.createAccount a{
+    text-decoration: none;
+    color: #5900ff;
+}
+
+
+#forgotPassword a:hover, .createAccount a:hover{
+    text-decoration: underline;
+}
+
+
+#align{
+    position: fixed;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    top: 0;
+    color: white;
+    z-index: 1;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.arrow a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.arrow a svg:hover{
+    color:#5900ff
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+    margin: 36px 0;
+}
+
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 15px;
+}
+
+.media-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.media-options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+a.facebook{
+    color: #fff;
+    background-color: #4267b2;
+    text-decoration: none;
+}
+
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.facebook-icon,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+a.google{
+    text-decoration: none;
+    border: 1px solid #cacaca;
+}
+
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
