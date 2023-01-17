@@ -1,17 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
     border: 0px;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
 
     --banner-height: 800px;
 }
 
-body{
-    font-family: sans-serif;
-}
 
 #logo{
     width: 45px;
@@ -184,6 +184,7 @@ body{
     display: flex;
     justify-content: center;
     max-width: 300px;
+    padding-block: 30px;
 }
 
 .itemMenu{
@@ -193,7 +194,7 @@ body{
     border-radius: 5px;
     padding: 10px;
     width: 85px;
-    height: 85px;
+    min-height: 85px;
     box-shadow: 0 4px 10px #00000008,0 0 2px #0000000f,0 2px 6px #0000001f!important;
     cursor: pointer;
     transition: all 0.3s;
@@ -250,11 +251,13 @@ body{
 
 .privacyFooter{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     width: 100%;
     border-top: solid 0.5px #ffffff4e;
     background-color: #181818;
-    padding: 10px;
+    padding: 5px;
 }
 
 .footer{
@@ -271,9 +274,4 @@ body{
     color: #cacaca;
 }
 
-.privacyFooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35rem;
-}
+
